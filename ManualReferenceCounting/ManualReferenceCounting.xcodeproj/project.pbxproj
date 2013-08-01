@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F116604E17A8EB2900A150E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F116604D17A8EB2900A150E3 /* Foundation.framework */; };
+		F116605117A8EB2900A150E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F116605017A8EB2900A150E3 /* main.m */; };
+		F116605517A8EB2900A150E3 /* ManualReferenceCounting.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F116605417A8EB2900A150E3 /* ManualReferenceCounting.1 */; };
+		F116605D17A9034000A150E3 /* NSObject+ManualReferenceCounting.m in Sources */ = {isa = PBXBuildFile; fileRef = F116605C17A9034000A150E3 /* NSObject+ManualReferenceCounting.m */; };
+		F116606017A92FB700A150E3 /* CustomAutoreleasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F116605F17A92FB700A150E3 /* CustomAutoreleasePool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F116604817A8EB2900A150E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F116605517A8EB2900A150E3 /* ManualReferenceCounting.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F116604A17A8EB2900A150E3 /* ManualReferenceCounting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ManualReferenceCounting; sourceTree = BUILT_PRODUCTS_DIR; };
+		F116604D17A8EB2900A150E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F116605017A8EB2900A150E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F116605317A8EB2900A150E3 /* ManualReferenceCounting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManualReferenceCounting-Prefix.pch"; sourceTree = "<group>"; };
+		F116605417A8EB2900A150E3 /* ManualReferenceCounting.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ManualReferenceCounting.1; sourceTree = "<group>"; };
+		F116605B17A9034000A150E3 /* NSObject+ManualReferenceCounting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ManualReferenceCounting.h"; sourceTree = "<group>"; };
+		F116605C17A9034000A150E3 /* NSObject+ManualReferenceCounting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ManualReferenceCounting.m"; sourceTree = "<group>"; };
+		F116605E17A92FB700A150E3 /* CustomAutoreleasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAutoreleasePool.h; sourceTree = "<group>"; };
+		F116605F17A92FB700A150E3 /* CustomAutoreleasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAutoreleasePool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F116604717A8EB2900A150E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F116604E17A8EB2900A150E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F116604117A8EB2900A150E3 = {
+			isa = PBXGroup;
+			children = (
+				F116604F17A8EB2900A150E3 /* ManualReferenceCounting */,
+				F116604C17A8EB2900A150E3 /* Frameworks */,
+				F116604B17A8EB2900A150E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F116604B17A8EB2900A150E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F116604A17A8EB2900A150E3 /* ManualReferenceCounting */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F116604C17A8EB2900A150E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F116604D17A8EB2900A150E3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F116604F17A8EB2900A150E3 /* ManualReferenceCounting */ = {
+			isa = PBXGroup;
+			children = (
+				F116605017A8EB2900A150E3 /* main.m */,
+				F116605417A8EB2900A150E3 /* ManualReferenceCounting.1 */,
+				F116605217A8EB2900A150E3 /* Supporting Files */,
+				F116605B17A9034000A150E3 /* NSObject+ManualReferenceCounting.h */,
+				F116605C17A9034000A150E3 /* NSObject+ManualReferenceCounting.m */,
+				F116605E17A92FB700A150E3 /* CustomAutoreleasePool.h */,
+				F116605F17A92FB700A150E3 /* CustomAutoreleasePool.m */,
+			);
+			path = ManualReferenceCounting;
+			sourceTree = "<group>";
+		};
+		F116605217A8EB2900A150E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F116605317A8EB2900A150E3 /* ManualReferenceCounting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F116604917A8EB2900A150E3 /* ManualReferenceCounting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F116605817A8EB2900A150E3 /* Build configuration list for PBXNativeTarget "ManualReferenceCounting" */;
+			buildPhases = (
+				F116604617A8EB2900A150E3 /* Sources */,
+				F116604717A8EB2900A150E3 /* Frameworks */,
+				F116604817A8EB2900A150E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManualReferenceCounting;
+			productName = ManualReferenceCounting;
+			productReference = F116604A17A8EB2900A150E3 /* ManualReferenceCounting */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F116604217A8EB2900A150E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = 1;
+			};
+			buildConfigurationList = F116604517A8EB2900A150E3 /* Build configuration list for PBXProject "ManualReferenceCounting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F116604117A8EB2900A150E3;
+			productRefGroup = F116604B17A8EB2900A150E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F116604917A8EB2900A150E3 /* ManualReferenceCounting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F116604617A8EB2900A150E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F116605117A8EB2900A150E3 /* main.m in Sources */,
+				F116605D17A9034000A150E3 /* NSObject+ManualReferenceCounting.m in Sources */,
+				F116606017A92FB700A150E3 /* CustomAutoreleasePool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F116605617A8EB2900A150E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F116605717A8EB2900A150E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F116605917A8EB2900A150E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManualReferenceCounting/ManualReferenceCounting-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F116605A17A8EB2900A150E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManualReferenceCounting/ManualReferenceCounting-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F116604517A8EB2900A150E3 /* Build configuration list for PBXProject "ManualReferenceCounting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F116605617A8EB2900A150E3 /* Debug */,
+				F116605717A8EB2900A150E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F116605817A8EB2900A150E3 /* Build configuration list for PBXNativeTarget "ManualReferenceCounting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F116605917A8EB2900A150E3 /* Debug */,
+				F116605A17A8EB2900A150E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F116604217A8EB2900A150E3 /* Project object */;
+}

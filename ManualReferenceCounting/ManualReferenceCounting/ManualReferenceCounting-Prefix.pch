@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ManualReferenceCounting' target in the 'ManualReferenceCounting' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
