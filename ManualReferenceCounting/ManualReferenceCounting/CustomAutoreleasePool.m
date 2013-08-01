@@ -37,6 +37,7 @@
 {
     CFArrayRef stackOfPools = [self _arrayOfPools];
     CFIndex count = CFArrayGetCount(stackOfPools);
+    //pool at the top of stack is active pool, so we are obtaining active pool in _arrayOfPools on our local thread.
     CustomAutoreleasePool *pool = (id)CFArrayGetValueAtIndex(stackOfPools, count - 1);
     [pool addObject: object];
     
