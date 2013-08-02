@@ -74,22 +74,22 @@ static unsigned long DecrementReferenceCountThreadSafe(void *object)
 @implementation NSObject (MaRC)
 
 //we implemented our reference count in such way, that every object that was created automatically ref count 1 will be assigned, thus we do not make any manipulation with reference count when implement following four methods, which returns object with ownership
-+(id)allocWithNewObject
+-(id)allocWithNewObject
 {
     return [[[self class] alloc ]init];
 }
 
-+(id)newObject
+-(id)newObject
 {
     return [[self class]new];
 }
 
-+(id)mutableCopyNewObject:(id)object
+-(id)mutableCopyNewObject:(id)object
 {
     return [object mutableCopy];
 }
 
-+(id)copyNewObject:(id)object
+-(id)copyNewObject:(id)object
 {
     return [object copy];
 }
