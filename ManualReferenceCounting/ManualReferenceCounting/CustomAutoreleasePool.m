@@ -94,7 +94,7 @@
 @end
 
 
-@implementation NSObject (MAAutoreleasePool)
+@implementation NSObject (CustomAutorelease)
 
 - (id)custom_autorelease
 {
