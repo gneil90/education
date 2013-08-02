@@ -10,6 +10,7 @@
 #import "CustomAutoreleasePool.h"
 
 static CFMutableDictionaryRef dictionaryWithReferenceCount;
+static OSSpinLock referenceCountDictionaryLock;
 
 //returns count of references
 static unsigned long GetReferenceCountOfObject(void *key)
@@ -43,20 +44,29 @@ static void SetReferenceCountOfObject(void *key, unsigned long count)
     }
 }
 
-static void IncrementReferenceCount(void *object)
+static void IncrementReferenceCountThreadSafe(void *object)
 {
-    
+    OSSpinLockLock(&referenceCountDictionaryLock);
+
     unsigned long count = GetReferenceCountOfObject(object);
     SetReferenceCountOfObject(object, count + 1);
+    
+    OSSpinLockUnlock(&referenceCountDictionaryLock);
+
+    
 }
 
-static unsigned long DecrementReferenceCount(void *object)
+static unsigned long DecrementReferenceCountThreadSafe(void *object)
 {
+    OSSpinLockLock(&referenceCountDictionaryLock);
     unsigned long count = GetReferenceCountOfObject(object);
+
     unsigned long newCount = count - 1;
     SetReferenceCountOfObject(object, newCount);
-    
+    OSSpinLockUnlock(&referenceCountDictionaryLock);
     return newCount;
+    
+
 }
 
 
@@ -93,13 +103,13 @@ static unsigned long DecrementReferenceCount(void *object)
 
 - (id)custom_retain;
 {
-    IncrementReferenceCount(self);
+    IncrementReferenceCountThreadSafe(self);
     return self;
 }
 
 - (void)custom_release;
 {
-    unsigned long newCount = DecrementReferenceCount(self);
+    unsigned long newCount = DecrementReferenceCountThreadSafe(self);
     if(newCount == 0)
         [self dealloc];
 }
