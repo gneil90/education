@@ -19,7 +19,7 @@
 
 @end
 
-@interface NSObject (MAAutoreleasePool)
+@interface NSObject (CustomAutorelease)
 
 - (id)custom_autorelease;
 
