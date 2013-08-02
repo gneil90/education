@@ -17,10 +17,10 @@
  *ownership police,
  *methods that are from group alloc/init/copy/mutableCopy !always returns object which owner you are
  */
-+(id)allocWithNewObject;
-+(id)copyNewObject;
-+(id)mutableCopyNewObject;
-+(id)newObject;
+-(id)allocWithNewObject;
+-(id)copyNewObject;
+-(id)mutableCopyNewObject;
+-(id)newObject;
 
 /*
  *ownership police,
